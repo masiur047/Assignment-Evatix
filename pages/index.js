@@ -1,23 +1,23 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import First from '../component/Firstpart'
-import Navbar from '../component/navbar'
-import styles from '../styles/Home.module.css'
-import Second from '../component/second'
-import Last from '../component/last'
+import React from 'react';
 
-export default function Home() {
+function Home() {
   return (
     <div>
-      <div className="bag">
-        <First />
-      </div>
-      <div>
-        <Second />
-      </div>
-      <div className="bag2">
-         <Last />
-      </div>
+        <div className="make">
+           Make your website
+        </div>
+        <div className="make">
+           wonderful
+        </div>
+        <p className="pt">
+           Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
+        </p>
+        <div>
+            <button className="bt">Start Free Trail</button>
+            <button className="bt">Learn More</button>
+        </div>
     </div>
-  )
+  );
 }
+
+export default Home;
